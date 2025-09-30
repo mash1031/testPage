@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages 動作確認ページ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* カスタムスタイルはTailwindで対応できない場合にのみ使用 */
+        .container {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <div class="container flex flex-col items-center justify-center p-8">
+        
+        <h1 class="text-4xl font-bold text-gray-800 mb-6">
+            🎉 GitHub Pages 動作中！
+        </h1>
+        
+        <p id="message" class="text-xl text-indigo-600 mb-8 p-4 bg-white shadow-lg rounded-lg">
+            下のボタンを押して動作を確認してください。
+        </p>
+
+        <button 
+            id="actionButton"
+            class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105"
+        >
+            メッセージを変更
+        </button>
+
+        <div class="mt-10 text-center">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-2">
+                現在のシステム日時
+            </h2>
+            <p id="timeDisplay" class="text-lg text-gray-500 font-mono">
+                [ここに日時が表示されます]
+            </p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
